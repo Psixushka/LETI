@@ -70,8 +70,8 @@ int task4() {
 	int m = 1;
 	m <<= 31;
 	for (int i = 0; i < 32; i++) {
-		cout << ((xarr[0] & m) ? 1 : 0);
-		xarr[0] <<= 1;
+		cout << ((xarr[1] & m) ? 1 : 0);
+		xarr[1] <<= 1;
 		if (i == 0) {
 			cout << " ";
 		}
@@ -80,8 +80,8 @@ int task4() {
 		}
 	}
 	for (int i = 0; i < 32; i++) {
-		cout << ((xarr[1] & m) ? 1 : 0);
-		xarr[1] <<= 1;
+		cout << ((xarr[0] & m) ? 1 : 0);
+		xarr[0] <<= 1;
 	}
 	cout << endl;
 	return 0;
